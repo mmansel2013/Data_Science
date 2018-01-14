@@ -1,1 +1,1 @@
-#learning-code
+sample of Python code, enjoy. 
