@@ -1,4 +1,4 @@
-## 2. Introduction to the data ##
+
 
 import pandas as pd
 reviews = pd.read_csv('fandango_scores.csv')
@@ -6,7 +6,7 @@ cols = ['FILM', 'RT_user_norm', 'Metacritic_user_nom', 'IMDB_norm', 'Fandango_Ra
 norm_reviews = reviews[cols]
 print(norm_reviews[:1])
 
-## 4. Creating Bars ##
+
 
 import matplotlib.pyplot as plt
 from numpy import arange
@@ -18,7 +18,6 @@ fig, ax = plt.subplots()
 ax.bar(bar_positions, bar_heights, 0.5)
 plt.show()
 
-## 5. Aligning Axis Ticks And Labels ##
 
 num_cols = ['RT_user_norm', 'Metacritic_user_nom', 'IMDB_norm', 'Fandango_Ratingvalue', 'Fandango_Stars']
 bar_heights = norm_reviews[num_cols].iloc[0].values
@@ -35,7 +34,7 @@ ax.set_ylabel('Average Rating')
 ax.set_title('Average User Rating For Avengers: Age of Ultron (2015)')
 plt.show()
 
-## 6. Horizontal Bar Plot ##
+
 
 import matplotlib.pyplot as plt
 from numpy import arange
@@ -75,7 +74,7 @@ ax2.set_xlabel('Rotten Tomatoes')
 ax2.set_ylabel('Fandango')
 plt.show()
 
-## 9. Benchmarking correlation ##
+
 
 import matplotlib.pyplot as plt
 
